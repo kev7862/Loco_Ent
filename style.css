@@ -1,0 +1,93 @@
+#loader {
+  padding: 0;
+  height: 100%;
+  padding-top: 338px;
+  padding-bottom: 300px;
+}
+
+#loader {
+  font-family: 'Bubbler One', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+svg {
+  font-weight: bold;
+  max-width: 600px;
+  height: auto;
+}
+
+#loader {
+  background: linear-gradient(282deg, #131414, #8f9d9d, #505656, #425252, #5d7b73, #3d4341, #1c1c18, #3a4746, #4f5867, #020101, #5d8181, #0a0b0b, #36303e, #647872);
+  background-size: 2800% 2800%;
+  -webkit-animation: AnimationName 24s ease infinite;
+  -moz-animation: AnimationName 24s ease infinite;
+  -o-animation: AnimationName 24s ease infinite;
+  animation: AnimationName 24s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 51%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+.typewriter h5 {
+  color: #fff;
+  font-family: 'Bubbler One', sans-serif;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: orange
+  }
+}
+
+
+/*end of page loader*/
